@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Assignment</string>
+
+    <string name="check_internet">Please Check Your Internet Connection</string>
+    <string name="error_network_timeout">Slow Internet Connection</string>
+    <string name="something_went_error">Something Went Wrong .</string>
+    <string name="exception">Some Exception There</string>
+    <string name="something_went_wrong">Something went wrong</string>
+</resources>

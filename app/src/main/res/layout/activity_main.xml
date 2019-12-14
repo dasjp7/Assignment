@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/rel_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_color">
+        <RelativeLayout
+            android:id="@+id/rel_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow"
+                android:layout_margin="16dp"
+                android:layout_centerVertical="true"/>
+
+            <com.jpdas.assignment.FontsUsed.MontserratSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="My Profile"
+                android:textColor="@color/text_primary_color"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu"
+                android:layout_margin="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_0">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/rel_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/profile_bg">
+            <RelativeLayout
+                android:id="@+id/rel_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_profile_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/profile_picture"/>
+
+                <LinearLayout
+                    android:id="@+id/lin_1"
+                    android:layout_toRightOf="@+id/user_profile_image"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+
+                    <com.jpdas.assignment.FontsUsed.MontserratRegular
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User Name"
+                        android:textColor="@color/text_primary_color"
+                        android:textSize="18sp"/>
+                    <com.jpdas.assignment.FontsUsed.MontserratMedium
+                        android:id="@+id/tv_user_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textColor="@color/text_secondary_color"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_2"
+                android:layout_below="@+id/rel_2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <com.jpdas.assignment.FontsUsed.MontserratBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RIDES"
+                        android:textColor="@color/text_secondary_color"/>
+                    <com.jpdas.assignment.FontsUsed.MontserratRegular
+                        android:id="@+id/tv_rides"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="67"
+                        android:textColor="@color/text_primary_color"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <com.jpdas.assignment.FontsUsed.MontserratBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FREE RIDES"
+                        android:textColor="@color/text_secondary_color"/>
+                    <com.jpdas.assignment.FontsUsed.MontserratRegular
+                        android:id="@+id/tv_free_rides"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:textColor="@color/text_primary_color"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <com.jpdas.assignment.FontsUsed.MontserratBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CREDITS"
+                        android:textColor="@color/text_secondary_color"/>
+                    <com.jpdas.assignment.FontsUsed.MontserratRegular
+                        android:id="@+id/tv_credits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$100"
+                        android:textColor="@color/text_primary_color"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rel_3"
+                android:layout_below="@+id/rel_4"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.jpdas.assignment.FontsUsed.MontserratSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Past Trips"
+                    android:textColor="@color/text_primary_color"
+                    android:textSize="18sp"/>
+
+                <com.jpdas.assignment.FontsUsed.MontserratSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See all"
+                    android:textColor="@color/material_red"
+                    android:textSize="18sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_3"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/trip_recycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</RelativeLayout>

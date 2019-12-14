@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/light_color"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="0dp"
+    android:layout_marginTop="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:id="@+id/lin_1_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/up_arrow"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/dot_circular_shape" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/dot_circular_shape" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/dot_circular_shape" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/down_arrow" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lin_2_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/lin_1_card">
+
+            <com.jpdas.assignment.FontsUsed.MontserratSemiBold
+                android:id="@+id/tv_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stare Maisto"
+                android:textColor="@color/text_primary_color"
+                android:textSize="17sp"/>
+            <com.jpdas.assignment.FontsUsed.MontserratRegular
+                android:id="@+id/tv_from_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nov 24,18:00"
+                android:textColor="@color/text_secondary_color"
+                android:textSize="14sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_50sdp">
+                <com.jpdas.assignment.FontsUsed.MontserratSemiBold
+                    android:id="@+id/tv_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meupark St"
+                    android:textColor="@color/text_primary_color"
+                    android:textSize="17sp"
+                    />
+                <com.jpdas.assignment.FontsUsed.MontserratRegular
+                    android:id="@+id/tv_to_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nov 24,19:35"
+                    android:textColor="@color/text_secondary_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/lin_2_card"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_8sdp">
+
+            <com.jpdas.assignment.FontsUsed.MontserratBold
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_secondary_color"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:id="@+id/lin_3_card"
+                android:layout_below="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+                <com.jpdas.assignment.FontsUsed.MontserratMedium
+                    android:id="@+id/tv_currency_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textColor="@color/text_primary_color"
+                    android:textSize="14sp"/>
+                <com.jpdas.assignment.FontsUsed.MontserratRegular
+                    android:id="@+id/tv_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16"
+                    android:textColor="@color/text_primary_color"
+                    android:textSize="26sp"/>
+            </LinearLayout>
+
+            <com.jpdas.assignment.FontsUsed.MontserratSemiBold
+                android:id="@+id/tv_time"
+                android:layout_below="@+id/lin_3_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Travel time: 1h 35min"
+                android:textColor="@color/text_secondary_color"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_56sdp"
+                android:gravity="right"
+                android:textSize="12sp"/>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>
